@@ -1,0 +1,48 @@
+body{
+    background: url("../img/negro.jpg");
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  line-height: 120px;
+  background: transparent;
+  display: inline-block;
+  margin-left: 40%;
+  margin-top: 17%;
+}
+
+/*  Ripple */
+
+.ripple {
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(9, 0, 0, 0.2);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  opacity: 1;
+  margin-left: 40%;
+  margin-top: 17%;
+}
+.rippleEffect {
+    -webkit-animation: rippleDrop .6s linear;
+            animation: rippleDrop .6s linear;
+}
+
+@-webkit-keyframes rippleDrop {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes rippleDrop {
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
